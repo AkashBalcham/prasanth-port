@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+    font-family: 'gilroy';
+    src: url('../src//assets/fonts/gilroy/gilroy/Gilroy-Black.ttf');    
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url('../src//assets/fonts/gilroy/gilroy/Gilroy-Medium.ttf');    
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url('../src//assets/fonts/gilroy/gilroy/Gilroy-Bold.ttf');    
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url('../src//assets/fonts/gilroy/gilroy/Gilroy-ExtraBold.ttf');    
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'duplet';
+    src: url('../src/assets/fonts/duplet/Duplet-Font-Family/Duplet-Bold-BF642a3406582e7.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'canela';
+    src: url('../src/assets/fonts/canela/CanelaCondensed-BoldItalic-Trial.otf');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'canela';
+    src: url('../src/assets/fonts/canela/CanelaCondensed-Bold-Trial.otf');
+    font-weight: 900;
+    font-style: normal;
+}
