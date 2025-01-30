@@ -75,15 +75,15 @@ const Landing = () => {
                 </div>
             </section>
             <div className="w-[full] flex items-center justify-center bottom-0 -mt-8 text-lg pb-8">
-                <HashLink smooth to={`#gong-box`}>
+                <HashLink smooth to={`#work`}>
                     <h1 className="text-2xl font-gilroy word-spacing-md">SCROLL DOWN <IoIosArrowDown className="text-xl inline" /></h1>
                 </HashLink>
             </div>
 
 
-            <div id="work" className="bg-[#FAFAFA] flex flex-col items-center pt-20 px-20">
-                <h1 className="text-center w-full flex justify-center mb-20"><span className="font-canela italic text-7xl mr-2">Selected </span> <span className="ml-2 font-gilroy text-7xl font-semibold"> Work</span></h1>
-                <div className="flex flex-col w-[80%]">
+            <div id="work" className="bg-[#FAFAFA] flex flex-col items-center pt-20 px-20 pb-40">
+                <h1 lassName="text-center w-full flex justify-center mb-20"><span className="font-canela italic text-7xl mr-2">Selected </span> <span className="ml-2 font-gilroy text-7xl font-semibold"> Work</span></h1>
+                <div className="flex flex-col w-[80%] mt-20">
                     {projects.map((project) => {
                         return (
                             <ProjectCard 

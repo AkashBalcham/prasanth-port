@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import logo from '../assets/images/logo.svg';
-import linkedin from '../assets/images/linkedin.svg';
+import logo from '../../assets/images/logo.svg'
+import linkedin from '../../assets/images/linkedin.svg';
 import { GoArrowUpRight } from "react-icons/go";
 import links from '../../data/links'
 import { HashLink } from "react-router-hash-link";

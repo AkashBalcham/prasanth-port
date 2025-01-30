@@ -17,19 +17,19 @@ const Project = () => {
 
     let project = null;
 
-    useEffect(() => {
-        const getProjectData = async () => {
-            project = await data[id];
+    // useEffect(() => {
+    //     const getProjectData = async () => {
+    //         project = await data[id];
 
-            if (project) {
-                setProjectData(project);
-                setProg(100 / ProjectMap.length);
-            }
+    //         if (project) {
+    //             setProjectData(project);
+    //             setProg(100 / ProjectMap.length);
+    //         }
 
-        }
+    //     }
 
-        getProjectData();
-    }, [])
+    //     getProjectData();
+    // }, [])
 
     
 
