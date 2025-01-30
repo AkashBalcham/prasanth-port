@@ -1,4 +1,3 @@
-import data from "../../data/project1/data"
 import Footer from '../../components/ProjectFooter/ProjectFooter';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
