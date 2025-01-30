@@ -17,6 +17,14 @@ module.exports = {
         semibold: 600,
         extrabold: 900,
       },
+      screens: {
+        lg: "1024px",
+        lgMid: "1152px",
+        xl: "1280px",
+        xlMid: "1408px",
+        "2xl": "1536px",
+        "3xl": "1700px",
+      }
     },
   },
   plugins: [
@@ -36,3 +44,8 @@ module.exports = {
   ],
 }
 
+/*
+lg	lg:	1024px
+xl	xl:	1280px
+2xl	2xl:	1536px
+*/
