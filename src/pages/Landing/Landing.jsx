@@ -52,20 +52,20 @@ const Landing = () => {
                 <h1 className="items-center font-gilroy font-normal text-center text-3xl  tracking-tight mb-12 lg:text-5xl xl:w-[30%] xl:text-5xl 2xl:text-6xl 2xl:w-[30%]">
                     <span>Problem-solver</span><span className="font-duplet">,</span><br/> storyteller<span className="font-canela">,</span> <br/> <span className="font-canela -pb-8">designer.</span>
                 </h1>
-                <h2 className="font-gilroy text-center mb-10 xl:text-2xl 2xl:text-2xl w-[23%] lg:text-xl lg:w-[32%] xl:w-[33%] 2xl:w-[30%] 3xl:w-[27%]">
-                    My name is Prasanth Rajan and I'm currently trying to avoid sugar.
+                <h2 className="font-gilroy text-center mb-10 xl:text-2xl 2xl:text-2xl w-[23%] lg:text-xl lg:w-[33%] xl:w-[32%] 2xl:w-[30%] 3xl:w-[27%]">
+                    My name is Prasanth Rajan and <br/> I'm currently trying to avoid sugar.
                 </h2>
                 
-                <div className="flex w-[20%] lg:w-[37%] xl:w-[34%] 2xl:w-[28%] 3xl:w-[25%] items-center justify-between">
-                    <button className="bg-black px-6 py-4 text-white text-xl lg:text-xl xl:text-2xl 2xl:text-2xl font-gilroy font-extralight">
+                <div className="flex w-[20%] lg:w-[40%] xl:w-[31%] xlMid:w-[32%] 2xl:w-[30%] 3xl:w-[26%] 4xl:w-[23%] items-center justify-between">
+                    <button className="bg-black px-6 py-4 text-white text-xl lg:text-xl xl:text-xl xlMid:text-2xl 2xl:text-2xl font-gilroy font-extralight">
                         Get in touch
                     </button>
                     {!copied ? (
-                            <button className="text-xl font-gilroy font-extralight px-6 py-4 text-center w-[53%]" onClick={handleCopy}>
+                            <button className="font-gilroy font-extralight px-6 py-4 text-xl lg:text-xl xl:text-xl xlMid:text-2xl 2xl:text-2xl text-center w-[53%]" onClick={handleCopy}>
                                 <PiCopyFill className="inline mr-2" /> Copy email
                             </button>
                         ) : (
-                            <button className="font-gilroy font-extralight px-6 py-4 text-lg text-center w-[50%]">
+                            <button className="font-gilroy font-extralight px-6 py-4 text-xl lg:text-xl xl:text-xl 2xl:text-2xl text-center w-[50%]">
                                 <IoMdCheckmark className="inline text-lg mr-2" /> Copied
                             </button>
                         )}

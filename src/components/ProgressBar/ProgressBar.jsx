@@ -6,7 +6,7 @@ const ProgressBar = (props) => {
     
 
     return (
-        <div className="w-[96%] h-[50%] flex flex-col justify-center">
+        <div className="lg:ml-8 lgMid:ml-6 w-[96%] h-[50%] flex flex-col justify-center">
             {/* <progress id="file" value={prog} max="100"> 32% </progress> */}
             <LinearProgress 
                 variant="determinate" 

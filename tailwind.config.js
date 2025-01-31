@@ -24,6 +24,7 @@ module.exports = {
         xlMid: "1408px",
         "2xl": "1536px",
         "3xl": "1700px",
+        "4xl": "1900px",
       }
     },
   },
