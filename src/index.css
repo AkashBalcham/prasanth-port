@@ -54,3 +54,10 @@
     font-weight: 900;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'canelaIt';
+    src: url('../src/assets/fonts/canela/CanelaDeck-MediumItalic-Trial.otf');
+    font-weight: 600;
+    font-style: italic;
+}

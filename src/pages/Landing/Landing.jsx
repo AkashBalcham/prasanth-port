@@ -56,12 +56,12 @@ const Landing = () => {
                     My name is Prasanth Rajan and <br/> I'm currently trying to avoid sugar.
                 </h2>
                 
-                <div className="flex w-[20%] lg:w-[28%] lgMid:w-[27%] xl:w-[27%] xlMid:w-[27%] 2xl:w-[26.5%] 3xl:w-[25%] 4xl:w-[23%] items-center justify-between">
-                    <button className="bg-black lg:px-4 lgMid:px-4 2xl:px-7 2xl:py-4 lg:py-2 lgMid:py-3 px-6 py-4 text-white text-xl lg:text-[100%] lgMid:text-[110%] xl:text-xl xlMid:text-2xl 2xl:text-[140%] font-gilroy font-extralight">
+                <div className="flex w-[20%] lg:w-[28%] lgMid:w-[27%] xl:w-[28%] xlMid:w-[27%] 2xl:w-[26.5%] 3xl:w-[25%] 4xl:w-[23%] items-center justify-between">
+                    <button className="bg-black lg:px-4 lgMid:px-4 2xl:px-7 2xl:py-5 lg:py-2 lgMid:py-3 xl:px-6 xl:py-3 px-6 py-4 text-white text-xl lg:text-[100%] lgMid:text-[110%] xl:text-[123%] xlMid:text-[130%] 2xl:text-[145%] font-gilroy font-extralight">
                         Get in touch
                     </button>
                     {!copied ? (
-                            <button className="font-gilroy font-extralight lg:px-4 lg:py-2 lgMid:py-3 px-6 py-4 text-xl lg:text-[100%] lgMid:text-[110%] xl:text-xl xlMid:text-2xl 2xl:text-2xl text-center w-[53%]" onClick={handleCopy}>
+                            <button className="font-gilroy font-extralight lg:px-4 lg:py-2 lgMid:py-3 xl:px-6 px-6 py-4 text-xl lg:text-[100%] lgMid:text-[110%] xl:text-[123%] xlMid:text-[130%] 2xl:text-[145%] text-center w-[53%]" onClick={handleCopy}>
                                 <PiCopyFill className="inline mr-2" /> Copy email
                             </button>
                         ) : (
@@ -82,7 +82,7 @@ const Landing = () => {
 
 
             <div id="work" className="w-full bg-[#000000] text-[#FFFFFF] flex flex-col lg:px-20 4xl:px-32 px-0 items-center pt-20 lg:pb-72 xl:pb-72 2xl:pb-40 ">
-                <h1 lassName="text-center w-full flex justify-center mb-20"><span className="tracking-wider font-canela italic text-7xl lg:text-5xl xl:text-[320%] 3xl:text-[350%] 4xl:text-7xl mr-2">Selected </span> <span className="ml-2 font-gilroy text-7xl lg:text-5xl xl:text-[320%] 3xl:text-[350%] 4xl:text-7xl font-semibold"> Work</span></h1>
+                <h1 lassName="text-center w-full flex justify-center mb-20"><span className="tracking-normal font-canelaIt text-7xl lg:text-5xl xl:text-[320%] 3xl:text-[350%] 4xl:text-7xl mr-2">Selected </span> <span className="ml-2 font-gilroy text-7xl lg:text-5xl xl:text-[320%] 3xl:text-[350%] 4xl:text-7xl font-semibold"> Work</span></h1>
                 <div className="w-[100%] flex flex-col mt16">
                     {projects.map((project) => {
                         return (

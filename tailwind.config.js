@@ -7,6 +7,7 @@ module.exports = {
         gilroy: ['gilroy', 'sans-serif'],
         duplet: ['duplet', 'sans-serif'],
         canela: ['canela', 'sans-serif'],
+        canelaIt: ['canelaIt', 'sans-serif'],
       },
       fontWeight: {
         extralight: 200,
