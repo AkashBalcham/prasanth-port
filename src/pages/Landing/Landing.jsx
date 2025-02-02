@@ -10,7 +10,7 @@ import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
 const Landing = () => {
 
-    const emailLink = { links }
+    const { emailLink } = { links }
 
     const [email, setEmail] = useState("user@example.com");
     const [copied, setCopied] = useState(false);
