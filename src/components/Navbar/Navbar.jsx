@@ -10,17 +10,19 @@ const Navbar = () => {
     const { linkedinLink } = links;
 
     return (
-        <div className="w-full flex justify-between items-center top-0 pt-6">
-            <Link to={`/`}><img src={logo} alt="Logo" /></Link>
-            <div className="flex flex-row flex-wrap gap-4 items-center justify-between xl:w-[35%] xlMid:w-[31%] 2xl:w-[30%] 3xl:w-[25%] 4xl:w-[24%]">
-                <button className="lg:text-xl xl:text-2xl font-gilroy px-4 py-2 border border-black border-opacity-20 transition-all duration-300 hover:bg-black hover:bg-opacity-10 hover:cursor-pointer"><HashLink smooth to={'#work'}>
+        <div className="lg:pl-12 lg:pr-4 lgMid:pl-16 lgMid:pr-8 xl:pr-6 px-16 w-full flex justify-between items-center top-0 pt-6">
+            <Link to={`/`}><img className="lgMid:w-[80%] 4xl:w-[100%]" src={logo} alt="Logo" /></Link>
+            <div className="flex flex-row items-center justify-between lg:ml-24 lg:w-[17%] xl:w-[17%] xlMid:w-[16%] 2xl:w-[15%] 3xl:w-[15%] 4xl:w-[13.3%]">
+                <button className="lg:text-[105%] lgMid:text-[130%] xl:text-[135%] 2xl:text-[145%] 3xl:text-[157%] 4xl:text-[160%] font-gilroy px-4 py-2 "><HashLink smooth to={'#work'}>
                     Work
                 </HashLink></button>
-                <button className="lg:text-xl xl:text-2xl font-gilroy px-4 py-2 border border-black border-opacity-20 transition-all duration-300 hover:bg-black hover:bg-opacity-10 hover:cursor-pointer">About</button>
-                <button className="lg:text-xl xl:text-2xl font-gilroy px-6 py-2 border border-black border-opacity-20 transition-all duration-300 hover:bg-black hover:bg-opacity-10 hover:cursor-pointer">Resume <GoArrowUpRight className="text-2xl inline" /></button>
+                <button className="lg:text-[105%] lgMid:text-[130%] xl:text-[135%] 2xl:text-[145%] 3xl:text-[157%] 4xl:text-[160%] font-gilroy px-4 py-2 ">About</button>
             </div>
             
-            <Link to={linkedinLink} target="_blank"><img src={linkedin} alt="linkedin"/></Link>          {/* Change the link for the LinkedIn*/}
+            <div className="lg:w-[18%] xl:w-[17%] xlMid:w-[14.9%] 2xl:w-[14%] 3xl:w-[14%] 4xl:w-[12%] flex flex-row items-center justify-between">
+                <button className="lg:text-[105%] lgMid:text-[130%] xl:text-[135%] 2xl:text-[145%] 3xl:text-[157%] 4xl:text-[160%] font-gilroy px-6 py-2 ">Resume</button>
+                <Link to={linkedinLink} target="_blank"><img className="lg:w-[75%] 2xl:w-[90%]" src={linkedin} alt="linkedin"/></Link>          {/* Change the link for the LinkedIn*/}
+            </div>
         </div>
     )
 }

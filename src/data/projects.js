@@ -1,11 +1,17 @@
-import ProjectCard1 from "../assets/images/ProjectCard1.png"
+
 
 const projects = [
     {
         id: 1,
-        image: ProjectCard1,
+        image: null,
         name: "Bharat-Vote",
-        desc: "Help Voting Informed & Accessible.",
+        desc: "Making voting easy for all with\n seamless access to informed\n choices.",
+    },
+    {
+        id: 2,
+        image: null,
+        name: "Transit",
+        desc: "A standalone app that integrates\nall transport modes in Bangalore\nfor seamless commuting.",
     }
 ]
 

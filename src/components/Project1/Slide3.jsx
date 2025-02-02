@@ -17,7 +17,7 @@ const Slide3 = () => {
 
                 <div className="lg:mt-10 xl:mt-14 3xl:mt-24 4xl:mt-20 mt-16 font-gilroy h-full flex flex-col items-start justify-start">
                     <h1 className="font-gilroy text-black/50 lg:text-[110%] lgMid:text-[120%] xl:text-[130%] xlMid:text-[145%] 2xl:text-[160%] 3xl:text-[165%] 4xl:text-[185%] text-2xl lg:mb-2 xlMid:mb-2 4xl:mb-4 mb-3">KEY CHALLENGES</h1>
-                    <ul className="font-gilroy lg:text-[110%] lgMid:text-[130%] xl:text-[150%] xlMid:text-[170%] 2xl:text-[180%] 3xl:text-[187%] 4xl:text-[230%] text-2xl list-disc pl-8">
+                    <ul className="font-gilroy lg:text-[110%] lgMid:text-[130%] xl:text-[150%] xlMid:text-[170%] 2xl:text-[180%] 3xl:text-[187%] 4xl:text-[clamp(1rem,185%,1.7rem)]  text-2xl list-disc pl-8">
                         <li className="lg:mb-1 xl:mb-2 2xl:mb-1 mb-4 lg:leading-8 lgMid:leading-9 xl:leading-10 xlMid:leading-[160%] 2xl:leading-[170%] 3xl:leading-[170%] 4xl:leading-[175%] leading-10">Many voters know party symbols but not<br /> the candidates, <span className="font-semibold">leading to party-based<br /> voting over individual merit.</span></li>
                         <li className="lg:mb-1 xl:mb-2 2xl:mb-1 mb-4 lg:leading-8 lgMid:leading-9 xl:leading-10 xlMid:leading-[160%] 2xl:leading-[170%] 3xl:leading-[170%] 4xl:leading-[175%] leading-10">
                         Candidate details are scattered across<br /> sources, making <span className="font-semibold"> accurate and unbiased<br /> information hard to find.</span></li>
