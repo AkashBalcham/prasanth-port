@@ -10,7 +10,7 @@ import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
 const Landing = () => {
 
-    const { emailLink } = { links }
+    const { emailLink, bharatVoteLink } = { links }
 
     const [email, setEmail] = useState("user@example.com");
     const [copied, setCopied] = useState(false);
@@ -92,6 +92,7 @@ const Landing = () => {
                                 name={project.name}
                                 image={project.image}
                                 desc={project.desc}
+                                link={project.link}
                             />
                         )
                     })}

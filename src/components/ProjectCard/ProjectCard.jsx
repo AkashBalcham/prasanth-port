@@ -19,7 +19,7 @@ const ProjectCard = (props) => {
                     {/* <h2 className="w-[70%] lg:w-[90%] text-white/50 font-gilroy lg:text-xl xl:text-3xl 2xl:text-3xl tracking-wide">{props.desc}</h2> */}
                 </div>
 
-                <Link to={`/projects/${props.id}`}>
+                <Link to={`${props.link}`} target="_blank">
                     <button className="border-[1px] border-[rgba(255,255,255,0.2)] bg-black px-6 py-4 lg:px-6 lgMid:px-8 lgMid:py-4 xl:py-6 3xl:px-8 3xl:py-6 text-white lg:text-[100%] lgMid:text-[110%] xl:text-[125%] xlMid:text-[145%] 2xl:text-[157%] font-gilroy font-extralight">
                         View Case Study
                     </button>
