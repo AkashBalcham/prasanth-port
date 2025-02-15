@@ -106,7 +106,7 @@ const Landing = () => {
                 </div>
             </div>
 
-            <section id="about-me" className="lg:pt-16 lg:px-20 2xl:px-24 xl:pt-16 xlMid:pt-20 font-canelaIt xlMid:px-20 4xl:px-32 pb-12">
+            <section id="about" className="lg:pt-16 lg:px-20 2xl:px-24 xl:pt-16 xlMid:pt-20 font-canelaIt xlMid:px-20 4xl:px-32 pb-12">
                     <h1 className="font-canelaIt text-7xl lg:text-5xl xl:text-[320%] 2xl:text-[350%] 3xl:text-[370%] 4xl:text-7xl ">About Me</h1>
                     <div className="flex flex-row justify-between items-start w-full lg:mt-10 3xl:mt-16">
                         <div className="font-gilroy flex flex-col items-start justify-start w-[55%]">

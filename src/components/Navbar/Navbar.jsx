@@ -16,7 +16,9 @@ const Navbar = () => {
                 <button className="lg:text-[105%] lgMid:text-[130%] xl:text-[135%] 2xl:text-[145%] 3xl:text-[157%] 4xl:text-[160%] font-gilroy px-4 py-2 "><HashLink className="text-black no-underline" smooth to={'#work'}>
                     Work
                 </HashLink></button>
-                <button className="lg:text-[105%] lgMid:text-[130%] xl:text-[135%] 2xl:text-[145%] 3xl:text-[157%] 4xl:text-[160%] font-gilroy px-4 py-2 "><HashLink smooth to={`#about-me`}></HashLink>About</button>
+                <button className="lg:text-[105%] lgMid:text-[130%] xl:text-[135%] 2xl:text-[145%] 3xl:text-[157%] 4xl:text-[160%] font-gilroy px-4 py-2 "><HashLink className="text-black no-underline" smooth to={'#about'}>
+                    About
+                </HashLink></button>
             </div>
             
             <div className="lg:w-[18%] xl:w-[17%] xlMid:w-[14.9%] 2xl:w-[14%] 3xl:w-[14%] 4xl:w-[12%] flex flex-row items-center justify-between">
