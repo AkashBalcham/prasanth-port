@@ -1,4 +1,4 @@
-import locoVideo from "../assets/images/loco.mp4"
+import locoVideo from "../assets/images/loco_final.mp4"
 
 const videos = {
     1: locoVideo
