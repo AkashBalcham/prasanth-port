@@ -2,7 +2,6 @@ import vote from "../assets/images/vote.jpg"
 import transit from "../assets/images/transit.jpg"
 import cella from "../assets/images/cella.jpg"
 import loco from "../assets/images/loco.jpg"
-import locoVideo from "../assets/images/loco.mp4"
 
 
 const projects = [

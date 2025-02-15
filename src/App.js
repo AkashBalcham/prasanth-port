@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Landing from './pages/Landing/Landing';
 import './App.css';
-import Project from './pages/Project/Project';
 import VideoPage from './pages/Video/Video';
 
 function App() {
