@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @font-face {
     font-family: 'gilroy';
     src: url('../src//assets/fonts/gilroy/gilroy/Gilroy-Black.ttf');    

@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Landing from './pages/Landing/Landing';
 import './App.css';
 import Project from './pages/Project/Project';
+import VideoPage from './pages/Video/Video';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path='/' element={ <Landing />}/>
+          <Route path="/videos/:videoId" element={<VideoPage />} />
         </Routes>
       </div>
     </Router>

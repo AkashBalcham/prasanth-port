@@ -7,6 +7,13 @@ import { useState } from "react";
 import links from '../../data/links';
 import projects from "../../data/projects"
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import aboutMeImages from "../../data/aboutMeImages";
+
+import Carousel from "react-bootstrap/Carousel";
+import CarouselItem from "react-bootstrap/CarouselItem";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import about from "../../assets/images/f1_1.jpeg"
 
 const Landing = () => {
 
@@ -75,14 +82,14 @@ const Landing = () => {
                 </div>
             </section>
             <div className="w-[full] flex items-center justify-center bottom-0 -mt-8 text-lg pb-8">
-                <HashLink smooth to={`#work`}>
-                    <h1 className="text-2xl font-gilroy word-spacing-md">SCROLL DOWN <IoIosArrowDown className="text-xl inline" /></h1>
+                <HashLink className="no-underline" smooth to={`#work`}>
+                    <h1 className="text-black no-underline text-2xl font-gilroy word-spacing-md">SCROLL DOWN <IoIosArrowDown className="text-xl inline" /></h1>
                 </HashLink>
             </div>
 
 
-            <div id="work" className="w-full bg-[#000000] text-[#FFFFFF] flex flex-col lg:px-20 4xl:px-32 px-0 items-center pt-20 lg:pb-72 xl:pb-72 2xl:pb-40 ">
-                <h1 lassName="text-center w-full flex justify-center mb-20"><span className="tracking-normal font-canelaIt text-7xl lg:text-5xl xl:text-[320%] 3xl:text-[350%] 4xl:text-7xl mr-2">Selected </span> <span className="ml-2 font-gilroy text-7xl lg:text-5xl xl:text-[320%] 3xl:text-[350%] 4xl:text-7xl font-semibold"> Work</span></h1>
+            <div id="work" className="w-full bg-[#000000] text-[#FFFFFF] flex flex-col lg:px-20 4xl:px-32 items-center pt-20 lg:pb-72 xl:pb-72 2xl:pb-40 ">
+                <h1 lassName="text-center w-full flex justify-center mb-20"><span className="tracking-normal font-canelaIt text-7xl lg:text-5xl xl:text-[180%] 3xl:text-[350%] 4xl:text-7xl mr-2">Selected </span> <span className="ml-2 font-gilroy text-7xl lg:text-5xl xl:text-[180%] 3xl:text-[350%] 4xl:text-7xl font-semibold"> Work</span></h1>
                 <div className="w-[100%] flex flex-col mt16">
                     {projects.map((project) => {
                         return (
@@ -98,6 +105,31 @@ const Landing = () => {
                     })}
                 </div>
             </div>
+
+            <section id="about-me" className="lg:pt-16 lg:px-20 2xl:px-24 xl:pt-16 xlMid:pt-20 font-canelaIt xlMid:px-20 4xl:px-32 pb-12">
+                    <h1 className="font-canelaIt text-7xl lg:text-5xl xl:text-[320%] 2xl:text-[350%] 3xl:text-[370%] 4xl:text-7xl ">About Me</h1>
+                    <div className="flex flex-row justify-between items-start w-full lg:mt-10 3xl:mt-16">
+                        <div className="font-gilroy flex flex-col items-start justify-start w-[55%]">
+                            <p className="leading-9 xlMid:leading-[160%] text-7xl lg:text-[117%] xl:text-[140%] xlMid:text-[150%] 2xl:text-[160%] 3xl:text-[185%] 4xl:text-[195%] ">Hey, I’m Prasanth Rajan —a designer, problem solver, and <br /> an all-around curious mind. I love figuring things out,<br /> I’ve always been drawn to how things work—whether it’s <br />digital products, everyday interactions, or even the <br />strategy behind a football match.</p>
+
+                            <p className="leading-9 lg:mt-8 lgMid:mt-4 xlMid:mt-8 xlMid:leading-[160%] lg:text-[117%] xl:text-[140%] xlMid:text-[150%] 2xl:text-[160%] 3xl:text-[185%] 4xl:text-[195%]">Speaking of which apart from work, football and music <br /> are two things that I enjoy doing. When I’m not<br /> designing, you’ll probably find me playing football, trying<br /> different food, exploring new ideas, going to the gym or<br /> simply enjoying good conversations. I believe in keeping<br /> things simple yet effective, and that applies to everything<br /> from my design work to the way I approach life.<br /> Always up for a good chat, so feel free to reach out.</p>
+
+                        </div>
+
+                        <div className="w-[40%]">
+                            <Carousel className="w-full">
+                                {aboutMeImages.map((image) => {
+                                    return (
+                                        <Carousel.Item className="w-full">
+                                            <img className="ml-auto mr-auto xl:w-[28vw] xlMid:w-[29vw] 2xl:w-[29vw] w-[27vw] h-[73vh]" src={image} alt="CarouselImage" />
+                                        </Carousel.Item>
+                                    )
+                                })}
+                            </Carousel>
+                        </div>
+
+                    </div>
+            </section>
         </div>
     )
 }
