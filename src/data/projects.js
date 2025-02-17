@@ -10,7 +10,7 @@ const projects = [
         image: transit,
         name: "Transit",
         desc: "A standalone app that integrates\nall transport modes in Bangalore\nfor seamless commuting.",
-        link: "https://www.figma.com/proto/OfVCj4Tbb1cGYiGhBiabK8/Transit?page-id=0%3A1&node-id=24-200&p=f&viewport=-1169%2C337%2C0.23&t=aivXO5QVgN8dq1Pl-1&scaling=scale-down&content-scaling=fixed",
+        link: "https://www.figma.com/proto/OfVCj4Tbb1cGYiGhBiabK8/Transit?page-id=&node-id=33-17&viewport=1429%2C237%2C0.1&t=CGhKsKh7JRBhBfYC-1&scaling=scale-down&content-scaling=fixed",
         hasVideo: false,
     },
     {
