@@ -20,7 +20,6 @@ const Landing = () => {
 
     const [email, setEmail] = useState(emailLink);
     const [copied, setCopied] = useState(false);
-    const [prog, setProg] = useState(30);
 
 
     const handleCopy = async () => {
@@ -33,28 +32,13 @@ const Landing = () => {
         }
     };
 
-    const increaseProg = () => {
-        console.log("Increaring progress...");
-        let oldProg = prog;
-        console.log("Old prog:", oldProg);
-        oldProg += 20;
-        console.log("New prog: ", oldProg);
-        console.log("Increasing progress...");
-
-        setProg((prevProg) => {
-            const newProg = prevProg + 20;
-            console.log("New prog: ", newProg);
-            return newProg; // Return the updated value
-        });
-
-        console.log("Prog after setting:", prog);
-    }
+    
 
 
     return (
         <div id="page-top" className="relative box-border">
             <Navbar id="top"/>
-            <section className="h-[100vh] flex flex-col items-center justify-center -mt-24">
+            <section className="h-[100vh] min-h-[700px] flex flex-col items-center justify-center -mt-24 gap-12 sm:gap-10 md:gap-8 lg:gap-6 xl:gap-4">
                 <h1 className="items-center font-gilroy font-normal text-center text-3xl  tracking-tight mb-12 lg:text-5xl xl:w-[30%] xl:text-[330%] xlMid:text-[350%] 2xl:text-[390%] 3xl:text-[400%] 4xl:text-[410%] 2xl:w-[30%]">
                     <span>Problem-solver</span><span className="font-duplet">,</span><br/> storyteller<span className="font-canela">,</span> <br/> <span className="font-canela tracking-normal -pb-8">designer.</span>
                 </h1>
@@ -120,7 +104,7 @@ const Landing = () => {
                                 {aboutMeImages.map((image) => {
                                     return (
                                         <Carousel.Item className="w-full">
-                                            <img className="ml-auto mr-auto xl:w-[28vw] xlMid:w-[29vw] 2xl:w-[29vw] w-[27vw]" src={image} alt="CarouselImage" />
+                                            <img className="relative -mt-20 ml-auto mr-auto w-[80%]" src={image} alt="CarouselImage" />
                                         </Carousel.Item>
                                     )
                                 })}
@@ -134,3 +118,6 @@ const Landing = () => {
 }
 
 export default Landing;
+
+
+// xl:w-[28vw] xlMid:w-[29vw] 2xl:w-[29vw] w-[27vw] h-[50%]
