@@ -10,14 +10,13 @@ import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import aboutMeImages from "../../data/aboutMeImages";
 
 import Carousel from "react-bootstrap/Carousel";
-import CarouselItem from "react-bootstrap/CarouselItem";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import about from "../../assets/images/f1_1.jpeg"
+const emailLink = links.emailLink
 
 const Landing = () => {
 
-    const { emailLink, bharatVoteLink } = { links }
+    
 
     const [email, setEmail] = useState(emailLink);
     const [copied, setCopied] = useState(false);
@@ -121,7 +120,7 @@ const Landing = () => {
                                 {aboutMeImages.map((image) => {
                                     return (
                                         <Carousel.Item className="w-full">
-                                            <img className="ml-auto mr-auto xl:w-[28vw] xlMid:w-[29vw] 2xl:w-[29vw] w-[27vw] h-[73vh]" src={image} alt="CarouselImage" />
+                                            <img className="ml-auto mr-auto xl:w-[28vw] xlMid:w-[29vw] 2xl:w-[29vw] w-[27vw]" src={image} alt="CarouselImage" />
                                         </Carousel.Item>
                                     )
                                 })}
