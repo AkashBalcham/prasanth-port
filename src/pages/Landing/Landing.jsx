@@ -19,7 +19,7 @@ const Landing = () => {
 
     const { emailLink, bharatVoteLink } = { links }
 
-    const [email, setEmail] = useState("user@example.com");
+    const [email, setEmail] = useState(emailLink);
     const [copied, setCopied] = useState(false);
     const [prog, setProg] = useState(30);
 
